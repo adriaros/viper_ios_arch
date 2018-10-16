@@ -10,6 +10,7 @@
 		FB8451E82175108D001BA9D7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8451E72175108D001BA9D7 /* UIViewExtension.swift */; };
 		FB8451ED21751522001BA9D7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8451EC21751522001BA9D7 /* Colors.swift */; };
 		FB8451EF217518E1001BA9D7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8451EE217518E1001BA9D7 /* UIViewControllerExtension.swift */; };
+		FB8452012175FD4F001BA9D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB8452032175FD4F001BA9D7 /* Localizable.strings */; };
 		FBC68AD821725DA20020131B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC68AD721725DA20020131B /* AppDelegate.swift */; };
 		FBC68ADA21725DA20020131B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC68AD921725DA20020131B /* LoginViewController.swift */; };
 		FBC68ADD21725DA20020131B /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC68ADB21725DA20020131B /* LoginViewController.storyboard */; };
@@ -28,6 +29,9 @@
 		FB8451E72175108D001BA9D7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		FB8451EC21751522001BA9D7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FB8451EE217518E1001BA9D7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FB8452022175FD4F001BA9D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB8452042175FD50001BA9D7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB8452052175FD88001BA9D7 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBC68AD421725DA10020131B /* VIPERarch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERarch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC68AD721725DA20020131B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC68AD921725DA20020131B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		FB8451FC2175EC34001BA9D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB8452032175FD4F001BA9D7 /* Localizable.strings */,
+			);
+			name = Resources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FBC68ACB21725DA10020131B = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		FBC68AD621725DA10020131B /* VIPERarch */ = {
 			isa = PBXGroup;
 			children = (
+				FB8451FC2175EC34001BA9D7 /* Resources */,
 				FB8451EB2175150C001BA9D7 /* Styles */,
 				FBC68AF62172620F0020131B /* Extensions */,
 				FBC68AEC21725DC90020131B /* Modules */,
@@ -168,6 +182,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				ca,
 			);
 			mainGroup = FBC68ACB21725DA10020131B;
 			productRefGroup = FBC68AD521725DA10020131B /* Products */;
@@ -185,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC68AE521725DA30020131B /* LaunchScreen.storyboard in Resources */,
+				FB8452012175FD4F001BA9D7 /* Localizable.strings in Resources */,
 				FBC68AE221725DA30020131B /* Assets.xcassets in Resources */,
 				FBC68ADD21725DA20020131B /* LoginViewController.storyboard in Resources */,
 			);
@@ -215,6 +232,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FB8452032175FD4F001BA9D7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8452022175FD4F001BA9D7 /* en */,
+				FB8452042175FD50001BA9D7 /* es */,
+				FB8452052175FD88001BA9D7 /* ca */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FBC68ADB21725DA20020131B /* LoginViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -238,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -299,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

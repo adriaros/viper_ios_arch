@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  VIPERarch
+
+  Created by Adria Ros Saez on 10/16/18.
+  Copyright © 2018 adria. All rights reserved.
+*/
+
+//Login
+"login_username_placeholder" = "Usuario";
+"login_password_placeholder" = "Contraseña";
+"login_button_title" = "Entrar";

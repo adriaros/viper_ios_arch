@@ -46,5 +46,3 @@ class LoginPresenter: LoginViewToPresenterProtocol {
 extension LoginPresenter: LoginInteractorToPresenterProtocol {
     
 }
-
-

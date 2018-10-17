@@ -7,6 +7,6 @@ target 'VIPERarch' do
 
   # Pods for VIPERarch
   pod 'Firebase/Core'
-  
+  pod 'Firebase/Auth'
 
 end

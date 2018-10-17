@@ -10,3 +10,6 @@
 "login_username_placeholder" = "Usuari";
 "login_password_placeholder" = "Contrasenya";
 "login_button_title" = "Accedir";
+
+//Error
+"error_handler_ok_button" = "D'acord";

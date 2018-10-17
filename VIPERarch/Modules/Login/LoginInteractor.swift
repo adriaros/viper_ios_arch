@@ -12,20 +12,10 @@ import Firebase
 class LoginInteractor: LoginPresenterToInteractorProtocol{
     
     var presenter: LoginInteractorToPresenterProtocol?
+    let FireBase = FireBaseServices()
     
     func login() {
-        
-        Auth.auth().signIn(withEmail: "admin@hotmail.com", password: "admin") { (user, error) in
-            
-            if user != nil {
-                print("user: ", user!.user)
-            }
-            
-            if error != nil {
-                print("error: ", error!)
-            }
-            
-        }
+        FireBase.Authentication(email: "admin@hotmail", password: "admin123")
     }
 }
 

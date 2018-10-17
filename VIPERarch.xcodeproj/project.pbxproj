@@ -13,6 +13,11 @@
 		FB8451EF217518E1001BA9D7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8451EE217518E1001BA9D7 /* UIViewControllerExtension.swift */; };
 		FB8452012175FD4F001BA9D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB8452032175FD4F001BA9D7 /* Localizable.strings */; };
 		FB84520921775312001BA9D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB84520821775312001BA9D7 /* GoogleService-Info.plist */; };
+		FB84520B21777274001BA9D7 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84520A21777274001BA9D7 /* UIApplicationExtension.swift */; };
+		FB84520E217775EF001BA9D7 /* FireBaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84520D217775EF001BA9D7 /* FireBaseServices.swift */; };
+		FB84521021777CBA001BA9D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84520F21777CBA001BA9D7 /* Constants.swift */; };
+		FB84521221777FBD001BA9D7 /* FireBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84521121777FBD001BA9D7 /* FireBaseError.swift */; };
+		FB84521421778130001BA9D7 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84521321778130001BA9D7 /* ErrorHandler.swift */; };
 		FBC68AD821725DA20020131B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC68AD721725DA20020131B /* AppDelegate.swift */; };
 		FBC68ADA21725DA20020131B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC68AD921725DA20020131B /* LoginViewController.swift */; };
 		FBC68ADD21725DA20020131B /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC68ADB21725DA20020131B /* LoginViewController.storyboard */; };
@@ -38,6 +43,11 @@
 		FB8452042175FD50001BA9D7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB8452052175FD88001BA9D7 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB84520821775312001BA9D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB84520A21777274001BA9D7 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		FB84520D217775EF001BA9D7 /* FireBaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseServices.swift; sourceTree = "<group>"; };
+		FB84520F21777CBA001BA9D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB84521121777FBD001BA9D7 /* FireBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseError.swift; sourceTree = "<group>"; };
+		FB84521321778130001BA9D7 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		FBC68AD421725DA10020131B /* VIPERarch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERarch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC68AD721725DA20020131B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC68AD921725DA20020131B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +105,20 @@
 			isa = PBXGroup;
 			children = (
 				FB8452032175FD4F001BA9D7 /* Localizable.strings */,
+				FB84520F21777CBA001BA9D7 /* Constants.swift */,
+				FB84521321778130001BA9D7 /* ErrorHandler.swift */,
 			);
 			name = Resources;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FB84520C217775DF001BA9D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB84520D217775EF001BA9D7 /* FireBaseServices.swift */,
+				FB84521121777FBD001BA9D7 /* FireBaseError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		FBC68ACB21725DA10020131B = {
@@ -121,10 +142,11 @@
 		FBC68AD621725DA10020131B /* VIPERarch */ = {
 			isa = PBXGroup;
 			children = (
-				FB8451FC2175EC34001BA9D7 /* Resources */,
-				FB8451EB2175150C001BA9D7 /* Styles */,
+				FB84520C217775DF001BA9D7 /* Network */,
 				FBC68AF62172620F0020131B /* Extensions */,
 				FBC68AEC21725DC90020131B /* Modules */,
+				FB8451EB2175150C001BA9D7 /* Styles */,
+				FB8451FC2175EC34001BA9D7 /* Resources */,
 				FBC68AD721725DA20020131B /* AppDelegate.swift */,
 				FBC68AE121725DA30020131B /* Assets.xcassets */,
 				FBC68AE321725DA30020131B /* LaunchScreen.storyboard */,
@@ -163,6 +185,7 @@
 				FBC68AF9217264FC0020131B /* StringExtension.swift */,
 				FB8451E72175108D001BA9D7 /* UIViewExtension.swift */,
 				FB8451EE217518E1001BA9D7 /* UIViewControllerExtension.swift */,
+				FB84520A21777274001BA9D7 /* UIApplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,10 +323,15 @@
 				FBC68AE021725DA20020131B /* VIPERarch.xcdatamodeld in Sources */,
 				FBC68AF8217262290020131B /* StoryboardExtension.swift in Sources */,
 				FBC68AF521725E8B0020131B /* LoginInteractor.swift in Sources */,
+				FB84521021777CBA001BA9D7 /* Constants.swift in Sources */,
+				FB84521421778130001BA9D7 /* ErrorHandler.swift in Sources */,
 				FB8451E82175108D001BA9D7 /* UIViewExtension.swift in Sources */,
 				FBC68ADA21725DA20020131B /* LoginViewController.swift in Sources */,
 				FBC68AFA217264FC0020131B /* StringExtension.swift in Sources */,
+				FB84521221777FBD001BA9D7 /* FireBaseError.swift in Sources */,
 				FB8451EF217518E1001BA9D7 /* UIViewControllerExtension.swift in Sources */,
+				FB84520B21777274001BA9D7 /* UIApplicationExtension.swift in Sources */,
+				FB84520E217775EF001BA9D7 /* FireBaseServices.swift in Sources */,
 				FBC68AF321725E7D0020131B /* LoginProtocols.swift in Sources */,
 				FBC68AF121725E640020131B /* LoginRouter.swift in Sources */,
 				FBC68AD821725DA20020131B /* AppDelegate.swift in Sources */,

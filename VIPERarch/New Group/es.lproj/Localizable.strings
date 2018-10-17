@@ -10,3 +10,6 @@
 "login_username_placeholder" = "Usuario";
 "login_password_placeholder" = "Contraseña";
 "login_button_title" = "Entrar";
+
+//Error
+"error_handler_ok_button" = "Entendido";

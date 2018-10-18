@@ -9,6 +9,13 @@
 import UIKit
 
 protocol LoginPresenterToViewProtocol: class{
+    var userImageView: UIImageView! {get set}
+    var userLabel: UILabel! {get set}
+    var userContainerView: UIView! {get set}
+    var userTextField: UITextField! {get set}
+    var passwordContainerView: UIView! {get set}
+    var passwordTextField: UITextField! {get set}
+    var loginButton: UIButton! {get set}
 }
 
 protocol LoginInteractorToPresenterProtocol: class{
@@ -16,6 +23,7 @@ protocol LoginInteractorToPresenterProtocol: class{
 
 protocol LoginPresenterToInteractorProtocol: class{
     var presenter: LoginInteractorToPresenterProtocol? {get set}
+    func login()
 }
 
 protocol LoginViewToPresenterProtocol: class{
@@ -23,6 +31,7 @@ protocol LoginViewToPresenterProtocol: class{
     var interactor: LoginPresenterToInteractorProtocol? {get set}
     var router: LoginPresenterToRouterProtocol? {get set}
     func updateView()
+    func loginButtonPressed()
 }
 
 protocol LoginPresenterToRouterProtocol: class{

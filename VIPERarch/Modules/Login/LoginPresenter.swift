@@ -40,6 +40,7 @@ class LoginPresenter: LoginViewToPresenterProtocol {
     }
     
     func loginButtonPressed(){
+        interactor?.login()
     }
 }
 

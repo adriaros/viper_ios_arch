@@ -6,7 +6,16 @@
 //  Copyright © 2018 adria. All rights reserved.
 //
 
+import UIKit
+import Firebase
+
 class LoginInteractor: LoginPresenterToInteractorProtocol{
+    
     var presenter: LoginInteractorToPresenterProtocol?
+    let FireBase = FireBaseServices()
+    
+    func login() {
+        FireBase.Authentication(email: "admin@hotmail", password: "admin123")
+    }
 }
 

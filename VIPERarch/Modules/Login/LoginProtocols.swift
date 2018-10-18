@@ -23,6 +23,7 @@ protocol LoginInteractorToPresenterProtocol: class{
 
 protocol LoginPresenterToInteractorProtocol: class{
     var presenter: LoginInteractorToPresenterProtocol? {get set}
+    func login()
 }
 
 protocol LoginViewToPresenterProtocol: class{
